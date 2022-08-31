@@ -1,0 +1,15 @@
+a = float(input("What is your a? "))
+b = float(input("What is your b? "))
+c = float(input("What is your c? "))
+
+xptop= (-1*b)+(pow((b*b)-(4*a*c),0.5))
+xntop= (-1*b)-(pow((b*b)-(4*a*c),0.5))
+
+xpbot= (2*a)
+xnbot= (2*a)
+
+xp= (xptop)/(xpbot)
+xn= (xntop)/(xnbot)
+
+print("Root 1 Value: " + str(xp))
+print("Root 2 Value: " + str(xn))
