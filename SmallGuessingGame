@@ -1,0 +1,18 @@
+print("Hello and welcome to my Guessing game!")
+rightnum=12
+
+wrongnum=1
+
+while wrongnum == 1:
+	usernum=int(input("Enter a number between 1 and 20: "))
+	if usernum < 0 or usernum > 21:
+		print("Invaild Number, please enter a number between 1 and 20")
+	elif usernum > rightnum:
+		print("Wrong number, the correct number is lower than that")
+	elif usernum < rightnum:
+		print("Wrong number, the correct number is higher than that")
+	else:
+		wrongnum=(wrongnum+1)
+		print(" ")
+		print("Correct, the number was ", rightnum )
+		print("However, you do not win a prize ¯\_(ツ)_/¯")
