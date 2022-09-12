@@ -1,0 +1,19 @@
+FirstTerm=0
+SecondTerm=1
+counter=0
+UNKNOWNTerm=0
+
+#UNKNOWNTERM=(n-1)TERM+(n-2)TERM
+
+print(" ")
+
+while FirstTerm <= 1000:
+	print("Fibonacci Term: " +str(counter) + " Fibonacci Number: " + str(FirstTerm)) #0 1 1 2
+	UNKNOWNTerm=FirstTerm+SecondTerm #1 2 3 
+	FirstTerm=SecondTerm #1 1 2
+	SecondTerm=UNKNOWNTerm #1 2 3
+	counter+=1
+	
+if FirstTerm>=1000:
+	print(" ")
+	print("The number of terms it takes the fibonacci sequence to be up to 1,000 is: " +str(counter-1))
