@@ -1,0 +1,25 @@
+FirstTerm=0
+SecondTerm=1
+counter=0
+UNKNOWNTerm=0
+goldratioA=0
+goldratioB=0
+print(" ")
+
+counterinput=int(input("Enter a number: "))
+
+print(" ")
+while counter != counterinput:
+	#print("Fibonacci Term: " +str(counter) + " Fibonacci Number: " + str(FirstTerm)) #0 1 1 2
+	UNKNOWNTerm=FirstTerm+SecondTerm #1 2 3 
+	FirstTerm=SecondTerm #1 1 2
+	SecondTerm=UNKNOWNTerm #1 2 3
+	counter+=1
+	
+	goldratioA=FirstTerm
+	goldratioB=SecondTerm
+	goldratioAB=(goldratioA/goldratioB)+1
+	print(goldratioAB)
+	
+if counter >= counterinput:
+	print("For numbers up to " +str(counter) + ", the golden ratio is approximately " +str(goldratioAB))
