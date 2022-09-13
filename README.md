@@ -3,4 +3,4 @@
 # SimpleQuadraticSolver: a quadratic problem solver for the format ax^2+bx+c=0
 # SmallGuessingGame: a simple guessing game between 1-20
 # FibonacciSequence1000 generates and prints all of the Fibonacci Numbers up to 1,000
-# GoldenRatio allows the user to input a number and it weill give out the golden ratio up to that number
+# GoldenRatio allows the user to input a number and it will give out the golden ratio up to that number
